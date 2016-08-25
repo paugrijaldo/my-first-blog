@@ -6,9 +6,9 @@
 	<body>
  		{% for post in posts %}
 			
-			published: {{ post.published_date }}
-			{{ post.title }}
-			{{ post.text|linebreaksbr }}	
+		<p> published: {{ post.published_date }} <p>
+		<p> {{ post.title }} <p>
+		<p> {{ post.text|linebreaksbr }} <p>
 
 		{% endfor %}
 	</body>
