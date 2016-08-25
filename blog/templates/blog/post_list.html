@@ -4,7 +4,13 @@
 	</head>
 
 	<body>
-		sdkjjjjjj
+ 		{% for post in posts %}
+			
+			published: {{ post.published_date }}
+			{{ post.title }}
+			{{ post.text|linebreaksbr }}	
+
+		{% endfor %}
 	</body>
 
 </html>
